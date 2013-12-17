@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Droid+Sans:400,700);
+
+$font-family-sans-serif: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-default-bg: #348EDA;
+$navbar-default-link-color: #ffffff;
+
+@import 'bootstrap';
+
+.navbar {
+	border-radius: 0;
+	border: none;
+}
+
+.navbar-brand {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 35px;
+}
+
+.center {
+	text-align: center;
+}
