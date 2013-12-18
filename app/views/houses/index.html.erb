@@ -1,0 +1,5 @@
+<% if current_user.house %>
+  <%= render 'layouts/existinguser' %>
+<% else %>
+  <%= render 'layouts/newuser' %>
+<% end %>
