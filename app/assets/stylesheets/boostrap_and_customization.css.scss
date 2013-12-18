@@ -36,6 +36,10 @@ body {
 	text-align: center;
 }
 
+h1 {
+	color: #2c3e50;
+}
+
 h2 {
 	font-size: 30px;
 	color: #7f8c8d;
@@ -113,8 +117,13 @@ footer {
 #sidebar-nav {
 	list-style-type: none;
 	padding: 0;
+	margin: 0 0 50px;
 }
 
 #sidebar-nav li {
 	margin: 25px 0 0;
+}
+
+#main {
+	padding: 0 0 0 25px;
 }
