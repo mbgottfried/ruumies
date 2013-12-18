@@ -3,9 +3,11 @@
 $font-family-sans-serif: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-default-bg: #348EDA;
 $navbar-default-link-color: #ffffff;
+$navbar-default-link-hover-color: #ffffff;
 $jumbotron-bg: #348EDA;
 $jumbotron-color: #ffffff;
 $btn-primary-bg: #348EDA;
+$btn-primary-border: #ffffff;
 
 @import 'bootstrap';
 
@@ -13,11 +15,16 @@ $btn-primary-bg: #348EDA;
 	border-radius: 0;
 	border: none;
 	margin-bottom: 0;
+	padding: 15px 0;
 }
 
 .navbar-brand {
 	font-family: 'Oleo Script Swash Caps', cursive;
 	font-size: 35px;
+}
+
+.navbar-nav > li > a {
+	font-weight: 700;
 }
 
 .center {
@@ -26,6 +33,7 @@ $btn-primary-bg: #348EDA;
 
 h2 {
 	font-size: 30px;
+	color: #7f8c8d;
 }
 
 h4 {
@@ -34,4 +42,31 @@ h4 {
 
 .home-buttons {
 	margin: 40px 0 0;
+}
+
+.btn-header {
+	border: 1px solid #ffffff;
+	border-radius: 15px;
+}
+
+.jumbotron {
+	min-height: 400px;
+	margin: 0;
+}
+
+.home-pane {
+	padding: 40px 0;
+}
+
+.pane-gray {
+	background: #F4F5F9;
+	-moz-box-shadow:    0px 0px 5px 0px #dadada;
+	-webkit-box-shadow: 0px 0px 5px 0px #dadada;
+	box-shadow:         0px 0px 5px 0px #dadada;
+	
+}
+
+footer {
+	background: #348EDA;
+	min-height: 200px;
 }
