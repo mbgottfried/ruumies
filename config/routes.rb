@@ -1,4 +1,6 @@
 Ruumies::Application.routes.draw do
+  resources :bills
+
   resources :houses
   devise_for :users
   

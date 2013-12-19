@@ -1,23 +1,13 @@
 <div class="container white">
-	<div id="sidebar" class="col-md-3">	
-		<h5>Our House</h5>
-		<ul id="sidebar-nav">
-			<li><span class="glyphicon glyphicon-credit-card"></span> Rent & Bills</li>
-			<li><span class="glyphicon glyphicon-list"></span> To-Do Lists</li>
-			<li><span class="glyphicon glyphicon-comment"></span> Messages</li>
-			<li><span class="glyphicon glyphicon-shopping-cart"></span> Groceries</li>
-		</ul>
-		<h5>House Members</h5>
-		<ul id="sidebar-users">
-		<% @house.users.each do |user| %>
-			<li><span class="glyphicon glyphicon-user"></span> <%= user.name %></li>
-		<% end %>
-		</ul>
-
-		<h5>More?</h5>
-	</div>
+	<%= render 'layouts/sidebar' %>
 	<div id="main" class="col-md-9">
 		<h1 class="page-header"><%= current_user.house.name %> Dashboard</h1>
 		<h3>Latest Updates</h3>
+		<ul id="dashboard-bills">
+		<% @house.bills.each do |bills| %>
+			<li><%= bills.name %></li>
+		<% end %>
+		</ul>
+
 	</div>
 </div>
